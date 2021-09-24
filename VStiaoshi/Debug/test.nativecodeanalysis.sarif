@@ -1,0 +1,65 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6201",
+          "message": {
+            "text": "索引“12”超出了“0”至“9”的有效范围(对于可能在堆栈中分配的缓冲区“arr”)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/VScode/VStiaoshi/test.c"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 3,
+                  "endLine": 29,
+                  "endColumn": 7
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "main",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30133.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"D:\\Visual Studio2019\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0125D1C0 -il C:\\Users\\胡万平\\AppData\\Local\\Temp\\_CL_b875b7aeast -typedil -f test.c -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930133 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -FoDebug\\test.obj -FdDebug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory D:\\VScode\\VStiaoshi -analyze:rulesetdirectory ;D:\\Visual Studio2019\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset D:\\Visual Studio2019\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin D:\\Visual Studio2019\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\Visual Studio2019\\VC\\Tools\\MSVC\\14.29.30133\\include -I D:\\Visual Studio2019\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I D:\\Visual Studio2019\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I D:\\Visual Studio2019\\VC\\Tools\\MSVC\\14.29.30133\\include -I D:\\Visual Studio2019\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I D:\\Visual Studio2019\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I D:\\Visual Studio2019\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I D:\\Visual Studio2019\\VC\\Auxiliary\\VS\\include -I D:\\Visual Studio2019\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/VScode/VStiaoshi/test.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "159ff1aaff4e672169f61c01b8cb3f6c"
+          }
+        }
+      ]
+    }
+  ]
+}

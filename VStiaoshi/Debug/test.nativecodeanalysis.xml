@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>D:\VScode\VStiaoshi\</FILEPATH>
+      <FILENAME>test.c</FILENAME>
+      <LINE>29</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>6201</DEFECTCODE>
+    <DESCRIPTION>索引“12”超出了“0”至“9”的有效范围(对于可能在堆栈中分配的缓冲区“arr”)。</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>22</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
